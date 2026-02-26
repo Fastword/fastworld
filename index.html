@@ -6,7 +6,6 @@
 <title>FastWorld - Discord Regeln</title>
 
 <style>
-/* ===== Body & Hintergrund ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -15,24 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== Rundes Server-Icon oben links ===== */
-.top-icon {
-    position: fixed;
-    top: 15px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;       /* rund */
-    box-shadow: 0 0 15px #00BFFF; /* Glow */
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    from { box-shadow: 0 0 10px #00BFFF; }
-    to { box-shadow: 0 0 25px #4FC3F7; }
-}
-
-/* ===== Container & Titel ===== */
 .container {
     text-align: center;
     padding: 80px 20px;
@@ -56,7 +37,6 @@ h2 {
     text-shadow: 0 0 10px #00BFFF;
 }
 
-/* ===== Regelbox ===== */
 .rules {
     max-width: 900px;
     margin: auto;
@@ -67,7 +47,6 @@ h2 {
     box-shadow: 0 0 30px rgba(0, 191, 255, 0.3);
 }
 
-/* ===== Einzelne Regeln Animation ===== */
 .rule {
     margin: 20px 0;
     font-size: 18px;
@@ -95,7 +74,6 @@ h2 {
     }
 }
 
-/* ===== Fallende Emojis ===== */
 .falling {
     position: fixed;
     top: -50px;
@@ -109,7 +87,6 @@ h2 {
     }
 }
 
-/* ===== Footer ===== */
 .footer {
     margin-top: 40px;
     font-size: 20px;
@@ -119,9 +96,6 @@ h2 {
 </head>
 
 <body>
-
-<!-- Dein Server Icon -->
-<img class="top-icon" src="https://imgur.com/a/bYDufWd" alt="FastWorld Server Icon">
 
 <div class="container">
     <h1>FastWorld</h1>
@@ -147,7 +121,6 @@ h2 {
 </div>
 
 <script>
-/* ===== Fallende Emojis Script ===== */
 function createFallingEmoji() {
     const emoji = document.createElement("div");
     emoji.classList.add("falling");
