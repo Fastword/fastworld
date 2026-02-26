@@ -6,6 +6,7 @@
 <title>FastWorld - Discord Regeln</title>
 
 <style>
+/* ===== Body & Hintergrund ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -14,19 +15,35 @@ body {
     overflow-x: hidden;
 }
 
-/* Hintergrund Animation */
+/* ===== Rundes Server-Icon oben links ===== */
+.top-icon {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;       /* rund */
+    box-shadow: 0 0 15px #00BFFF; /* Glow */
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #00BFFF; }
+    to { box-shadow: 0 0 25px #4FC3F7; }
+}
+
+/* ===== Container & Titel ===== */
+.container {
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-.container {
-    text-align: center;
-    padding: 50px 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Titel */
 h1 {
     font-size: 60px;
     margin-bottom: 10px;
@@ -39,7 +56,7 @@ h2 {
     text-shadow: 0 0 10px #00BFFF;
 }
 
-/* Regelbox */
+/* ===== Regelbox ===== */
 .rules {
     max-width: 900px;
     margin: auto;
@@ -50,7 +67,7 @@ h2 {
     box-shadow: 0 0 30px rgba(0, 191, 255, 0.3);
 }
 
-/* Regel Animation */
+/* ===== Einzelne Regeln Animation ===== */
 .rule {
     margin: 20px 0;
     font-size: 18px;
@@ -78,7 +95,7 @@ h2 {
     }
 }
 
-/* Fallende Emojis */
+/* ===== Fallende Emojis ===== */
 .falling {
     position: fixed;
     top: -50px;
@@ -92,24 +109,25 @@ h2 {
     }
 }
 
+/* ===== Footer ===== */
 .footer {
     margin-top: 40px;
     font-size: 20px;
     text-shadow: 0 0 10px #00BFFF;
 }
-
 </style>
 </head>
 
 <body>
+
+<!-- Dein Server Icon -->
+<img class="top-icon" src="https://imgur.com/a/bYDufWd" alt="FastWorld Server Icon">
 
 <div class="container">
     <h1>FastWorld</h1>
     <h2>Discord Regeln</h2>
 
     <div class="rules">
-        <p class="rule">@everyone – Willkommen auf dem offiziellen FastWorld Discord Server.</p>
-
         <p class="rule">1. Geht respektvoll mit jedem um.</p>
         <p class="rule">2. Das Teilen von NSFW- oder Gewaltdarstellungen ist untersagt.</p>
         <p class="rule">3. Eigenwerbung ist nicht erlaubt. Ausnahme: Absprache mit Moderatoren.</p>
@@ -123,13 +141,13 @@ h2 {
         <p class="rule">11. Verstöße können zu Timeout oder Ausschluss führen.</p>
 
         <div class="footer">
-            FastWorld steht für Fairness, Gaming und Zusammenhalt 🎮
+            FastWorld steht für Fairness, Gaming und Zusammenhalt
         </div>
     </div>
 </div>
 
-<!-- Fallende Emojis -->
 <script>
+/* ===== Fallende Emojis Script ===== */
 function createFallingEmoji() {
     const emoji = document.createElement("div");
     emoji.classList.add("falling");
@@ -143,7 +161,7 @@ function createFallingEmoji() {
     }, 8000);
 }
 
-setInterval(createFallingEmoji, 500);
+setInterval(createFallingEmoji, 600);
 </script>
 
 </body>
