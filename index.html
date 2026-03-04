@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FastWorld - Discord Regelwerk</title>
+<title>FastWorld - Discord Regeln</title>
 
 <style>
 body {
@@ -11,30 +11,62 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: radial-gradient(circle at top, #0f1c3f, #070d1f);
     color: white;
+    overflow-x: hidden;
 }
 
-/* Hauptbox */
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 120px 20px 100px;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 70px;
+    color: #6c7cff;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.header p {
+    letter-spacing: 8px;
+    color: #9aa4ff;
+    margin-top: 10px;
+}
+
+/* FALLENDE EMOJIS */
+.falling {
+    position: fixed;
+    top: -50px;
+    font-size: 30px;
+    animation: fall linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(110vh);
+    }
+}
+
+/* unterschiedliche Positionen */
+.f1 { left: 10%; animation-duration: 8s; }
+.f2 { left: 25%; animation-duration: 12s; }
+.f3 { left: 40%; animation-duration: 10s; }
+.f4 { left: 60%; animation-duration: 14s; }
+.f5 { left: 75%; animation-duration: 9s; }
+.f6 { left: 90%; animation-duration: 11s; }
+
+/* REGEL BEREICH */
 .wrapper {
     max-width: 1000px;
-    margin: 80px auto;
+    margin: auto;
     padding: 40px;
-    border-radius: 25px;
-    border: 1px solid rgba(108,124,255,0.3);
-    box-shadow: 0 0 40px rgba(108,124,255,0.2);
-    background: linear-gradient(145deg, #0d1533, #0a1128);
 }
 
-/* Titel */
-.title {
-    font-size: 32px;
-    color: #6c7cff;
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-/* Regel Karte */
 .rule {
     display: flex;
     gap: 20px;
@@ -52,7 +84,6 @@ body {
     box-shadow: 0 0 30px rgba(108,124,255,0.5);
 }
 
-/* Nummer Box */
 .number {
     min-width: 55px;
     height: 55px;
@@ -66,16 +97,13 @@ body {
     box-shadow: 0 0 15px rgba(108,124,255,0.6);
 }
 
-/* Text */
 .rule-content h3 {
     margin: 0 0 8px 0;
-    color: #ffffff;
 }
 
 .rule-content p {
     margin: 0;
     color: #b8c0ff;
-    line-height: 1.6;
     font-size: 14px;
 }
 </style>
@@ -83,96 +111,109 @@ body {
 
 <body>
 
+<!-- FALLING EMOJIS -->
+<div class="falling f1">🎧</div>
+<div class="falling f2">🎮</div>
+<div class="falling f3">💬</div>
+<div class="falling f4">🎧</div>
+<div class="falling f5">🎮</div>
+<div class="falling f6">💬</div>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>FastWorld</h1>
+    <p>DISCORD REGELN</p>
+</div>
+
+<!-- REGELN -->
 <div class="wrapper">
 
-<div class="title">📜 Discord Regelwerk</div>
-
 <div class="rule">
-    <div class="number">1</div>
-    <div class="rule-content">
-        <h3>🤝 Respektvoller Umgang</h3>
-        <p>Geht respektvoll mit jedem um.</p>
-    </div>
+<div class="number">1</div>
+<div class="rule-content">
+<h3>🤝 Respektvoller Umgang</h3>
+<p>Geht respektvoll mit jedem um.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">2</div>
-    <div class="rule-content">
-        <h3>🚫 Kein NSFW oder Gewalt</h3>
-        <p>Das Teilen von NSFW- oder Gewaltdarstellungen ist untersagt.</p>
-    </div>
+<div class="number">2</div>
+<div class="rule-content">
+<h3>🚫 Kein NSFW oder Gewalt</h3>
+<p>Das Teilen von NSFW- oder Gewaltdarstellungen ist untersagt.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">3</div>
-    <div class="rule-content">
-        <h3>📢 Keine Eigenwerbung</h3>
-        <p>Eigenwerbung ist nicht erlaubt. Ausnahme: Absprache mit Moderatoren.</p>
-    </div>
+<div class="number">3</div>
+<div class="rule-content">
+<h3>📢 Keine Eigenwerbung</h3>
+<p>Eigenwerbung ist nicht erlaubt. Ausnahme: Absprache mit Moderatoren.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">4</div>
-    <div class="rule-content">
-        <h3>👤 Angemessener Name & Profilbild</h3>
-        <p>Jeder braucht einen kenntlichen und angemessenen Namen sowie Profilbild.</p>
-    </div>
+<div class="number">4</div>
+<div class="rule-content">
+<h3>👤 Angemessener Name & Profilbild</h3>
+<p>Jeder braucht einen kenntlichen und angemessenen Namen sowie Profilbild.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">5</div>
-    <div class="rule-content">
-        <h3>💬 Kein Spam</h3>
-        <p>Kein Spam jeglicher Art – weder GIFs noch Text.</p>
-    </div>
+<div class="number">5</div>
+<div class="rule-content">
+<h3>💬 Kein Spam</h3>
+<p>Kein Spam jeglicher Art – weder GIFs noch Text.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">6</div>
-    <div class="rule-content">
-        <h3>📂 Richtige Kanäle nutzen</h3>
-        <p>Nachrichten gehören in die für sie vorgesehenen Kanäle.</p>
-    </div>
+<div class="number">6</div>
+<div class="rule-content">
+<h3>📂 Richtige Kanäle nutzen</h3>
+<p>Nachrichten gehören in die vorgesehenen Kanäle.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">7</div>
-    <div class="rule-content">
-        <h3>🌍 Keine Politik oder Religion</h3>
-        <p>Keine Diskussionen über Politik oder Religionen – jeder soll sich hier willkommen fühlen.</p>
-    </div>
+<div class="number">7</div>
+<div class="rule-content">
+<h3>🌍 Keine Politik oder Religion</h3>
+<p>Jeder soll sich hier willkommen fühlen.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">8</div>
-    <div class="rule-content">
-        <h3>🔒 Datenschutz</h3>
-        <p>Das Weitergeben oder Teilen privater Daten ist untersagt.</p>
-    </div>
+<div class="number">8</div>
+<div class="rule-content">
+<h3>🔒 Datenschutz</h3>
+<p>Das Teilen privater Daten ist untersagt.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">9</div>
-    <div class="rule-content">
-        <h3>📩 DM-Regelverstöße melden</h3>
-        <p>Bei Regelverstoß in DMs bitte einem Moderator oder Helper Bescheid sagen.</p>
-    </div>
+<div class="number">9</div>
+<div class="rule-content">
+<h3>📩 DM-Regelverstöße melden</h3>
+<p>Bei Regelverstoß bitte einem Moderator oder Helper Bescheid sagen.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">10</div>
-    <div class="rule-content">
-        <h3>⚙️ Regelanpassungen</h3>
-        <p>Moderatoren und Helper behalten sich das Recht vor, Regeln jederzeit zu ändern.</p>
-    </div>
+<div class="number">10</div>
+<div class="rule-content">
+<h3>⚙️ Regelanpassungen</h3>
+<p>Moderatoren behalten sich das Recht vor, Regeln zu ändern.</p>
+</div>
 </div>
 
 <div class="rule">
-    <div class="number">11</div>
-    <div class="rule-content">
-        <h3>⛔ Konsequenzen</h3>
-        <p>Ein Verstoß gegen diese Regeln kann zu Timeouts oder Ausschluss führen.</p>
-    </div>
+<div class="number">11</div>
+<div class="rule-content">
+<h3>⛔ Konsequenzen</h3>
+<p>Verstöße können zu Timeout oder Ausschluss führen.</p>
+</div>
 </div>
 
 </div>
