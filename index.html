@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FastWorld - Discord Regelwerk</title>
+<title>FastWorld - Discord Regeln</title>
 
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at top, #0f1c3f, #070d1f);
+    background: radial-gradient(circle at top, #14224a, #0b1635);
     color: white;
     overflow-x: hidden;
 }
@@ -17,29 +17,39 @@ body {
 /* ===== HEADER ===== */
 .header {
     text-align: center;
-    padding: 120px 20px 80px;
+    padding: 120px 20px 40px;
 }
 
 .header h1 {
-    font-size: 75px;
+    font-size: 80px;
+    margin: 0;
     color: #6c7cff;
     letter-spacing: 4px;
-    margin: 0;
 }
 
 .header p {
+    margin-top: 10px;
     letter-spacing: 8px;
     color: #9aa4ff;
-    margin-top: 10px;
+}
+
+/* TEXT IN DER MITTE */
+.middle-text {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    color: #b8c0ff;
+    opacity: 0.9;
 }
 
 /* ===== FALLING EMOJIS ===== */
 .falling {
     position: fixed;
     top: -50px;
-    font-size: 28px;
+    font-size: 26px;
     animation: fall linear infinite;
-    opacity: 0.6;
+    opacity: 0.5;
     pointer-events: none;
 }
 
@@ -48,12 +58,12 @@ body {
     100% { transform: translateY(110vh); }
 }
 
-.f1 { left: 8%; animation-duration: 10s; }
-.f2 { left: 20%; animation-duration: 14s; }
-.f3 { left: 35%; animation-duration: 12s; }
-.f4 { left: 55%; animation-duration: 16s; }
+.f1 { left: 10%; animation-duration: 12s; }
+.f2 { left: 25%; animation-duration: 15s; }
+.f3 { left: 40%; animation-duration: 10s; }
+.f4 { left: 60%; animation-duration: 14s; }
 .f5 { left: 75%; animation-duration: 11s; }
-.f6 { left: 90%; animation-duration: 13s; }
+.f6 { left: 90%; animation-duration: 16s; }
 
 /* ===== OUTER BOX ===== */
 .wrapper {
@@ -61,7 +71,7 @@ body {
     margin: 0 auto 100px;
     padding: 50px;
     border-radius: 30px;
-    background: linear-gradient(145deg, #0c142e, #0a1128);
+    background: linear-gradient(145deg, #0e1a3f, #0a1330);
     border: 1px solid rgba(108,124,255,0.3);
     box-shadow: 0 0 50px rgba(108,124,255,0.15);
 }
@@ -71,7 +81,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .icon-box {
@@ -91,12 +101,12 @@ body {
     margin: 0;
 }
 
-/* ===== DIVIDER LINE ===== */
+/* Linie */
 .divider {
     height: 1px;
     width: 100%;
     background: linear-gradient(to right, transparent, rgba(108,124,255,0.6), transparent);
-    margin-bottom: 40px;
+    margin: 30px 0 40px;
 }
 
 /* ===== RULE CARDS ===== */
@@ -107,7 +117,7 @@ body {
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 20px;
-    background: linear-gradient(145deg, #0e1735, #0a122b);
+    background: linear-gradient(145deg, #111c45, #0c1738);
     border: 1px solid rgba(108,124,255,0.25);
     transition: 0.3s ease;
 }
@@ -117,7 +127,6 @@ body {
     box-shadow: 0 0 25px rgba(108,124,255,0.5);
 }
 
-/* ===== NUMBER BOX ===== */
 .number {
     min-width: 55px;
     height: 55px;
@@ -131,7 +140,6 @@ body {
     box-shadow: 0 0 15px rgba(108,124,255,0.6);
 }
 
-/* ===== TEXT ===== */
 .rule-content h3 {
     margin: 0 0 8px 0;
 }
@@ -161,6 +169,10 @@ body {
     <p>DISCORD REGELN</p>
 </div>
 
+<div class="middle-text">
+    FastWorld steht für Fairness, Gaming und Zusammenhalt
+</div>
+
 <!-- Rules Section -->
 <div class="wrapper">
 
@@ -171,10 +183,12 @@ body {
 
 <div class="divider"></div>
 
+<!-- REGELN -->
+
 <div class="rule">
 <div class="number">1</div>
 <div class="rule-content">
-<h3>🤝 Respektvoller Umgang</h3>
+<h3>Respektvoller Umgang</h3>
 <p>Geht respektvoll mit jedem um.</p>
 </div>
 </div>
@@ -182,7 +196,7 @@ body {
 <div class="rule">
 <div class="number">2</div>
 <div class="rule-content">
-<h3>🚫 Kein NSFW oder Gewalt</h3>
+<h3>Keine NSFW- oder Gewaltdarstellungen</h3>
 <p>Das Teilen von NSFW- oder Gewaltdarstellungen ist untersagt.</p>
 </div>
 </div>
@@ -190,7 +204,7 @@ body {
 <div class="rule">
 <div class="number">3</div>
 <div class="rule-content">
-<h3>📢 Keine Eigenwerbung</h3>
+<h3>Keine Eigenwerbung</h3>
 <p>Eigenwerbung ist nicht erlaubt. Ausnahme: Absprache mit Moderatoren.</p>
 </div>
 </div>
@@ -198,7 +212,7 @@ body {
 <div class="rule">
 <div class="number">4</div>
 <div class="rule-content">
-<h3>👤 Angemessener Name & Profilbild</h3>
+<h3>Angemessener Name & Profilbild</h3>
 <p>Jeder braucht einen kenntlichen und angemessenen Namen sowie Profilbild.</p>
 </div>
 </div>
@@ -206,7 +220,7 @@ body {
 <div class="rule">
 <div class="number">5</div>
 <div class="rule-content">
-<h3>💬 Kein Spam</h3>
+<h3>Kein Spam</h3>
 <p>Kein Spam jeglicher Art – weder GIFs noch Text.</p>
 </div>
 </div>
@@ -214,48 +228,48 @@ body {
 <div class="rule">
 <div class="number">6</div>
 <div class="rule-content">
-<h3>📂 Richtige Kanäle nutzen</h3>
-<p>Nachrichten gehören in die vorgesehenen Kanäle.</p>
+<h3>Kanäle richtig nutzen</h3>
+<p>Nachrichten gehören in die für sie vorgesehenen Kanäle.</p>
 </div>
 </div>
 
 <div class="rule">
 <div class="number">7</div>
 <div class="rule-content">
-<h3>🌍 Keine Politik oder Religion</h3>
-<p>Jeder soll sich hier willkommen fühlen.</p>
+<h3>Keine Politik oder Religion</h3>
+<p>Keine Diskussionen über Politik oder Religionen – jeder soll sich willkommen fühlen.</p>
 </div>
 </div>
 
 <div class="rule">
 <div class="number">8</div>
 <div class="rule-content">
-<h3>🔒 Datenschutz</h3>
-<p>Das Teilen privater Daten ist untersagt.</p>
+<h3>Keine privaten Daten teilen</h3>
+<p>Das Weitergeben bzw. Teilen von privaten Daten ist untersagt.</p>
 </div>
 </div>
 
 <div class="rule">
 <div class="number">9</div>
 <div class="rule-content">
-<h3>📩 DM-Regelverstöße melden</h3>
-<p>Bei Regelverstoß bitte einem Moderator oder Helper Bescheid sagen.</p>
+<h3>DM-Verstöße melden</h3>
+<p>Sollte es zu einem Regelverstoß in den DMs kommen, informiert bitte einen Moderator/Helper.</p>
 </div>
 </div>
 
 <div class="rule">
 <div class="number">10</div>
 <div class="rule-content">
-<h3>⚙️ Regelanpassungen</h3>
-<p>Moderatoren behalten sich das Recht vor, Regeln zu ändern.</p>
+<h3>Regeländerungen</h3>
+<p>Moderatoren/Helper behalten sich das Recht vor, die Regeln jederzeit zu ändern.</p>
 </div>
 </div>
 
 <div class="rule">
 <div class="number">11</div>
 <div class="rule-content">
-<h3>⛔ Konsequenzen</h3>
-<p>Verstöße können zu Timeout oder Ausschluss führen.</p>
+<h3>Konsequenzen</h3>
+<p>Ein Verstoß kann zu Timeouts oder dem Ausschluss vom Server führen.</p>
 </div>
 </div>
 
